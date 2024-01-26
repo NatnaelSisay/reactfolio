@@ -10,6 +10,7 @@ import INFO from "../data/user";
 import SEO from "../data/seo";
 
 import "./styles/contact.css";
+import ContactForm from "../components/ContactForm";
 
 const Contact = () => {
 	useEffect(() => {
@@ -74,8 +75,13 @@ const Contact = () => {
 					</div>
 
 					<div className="socials-container">
-						<div className="contact-socials">
-							<Socials />
+						<div className="contact-socials flex flex-space-between">
+							<div className="border">
+								<Socials />
+							</div>
+							<div className="contact-form">
+								<ContactForm />
+							</div>
 						</div>
 					</div>
 
