@@ -22,6 +22,7 @@ import SEO from "../data/seo";
 import myArticles from "../data/articles";
 
 import "./styles/homepage.css";
+import ResumeLink from "../components/resume";
 
 const Homepage = () => {
 	const [stayLogo, setStayLogo] = useState(false);
@@ -112,6 +113,8 @@ const Homepage = () => {
 								</div>
 							</div>
 						</div>
+
+						<ResumeLink />
 
 						<div className="homepage-socials">
 							<a

@@ -1,0 +1,17 @@
+.cta {
+	border: none;
+	padding: 1rem 1.5rem;
+	border-radius: 5px;
+	transition: all 200ms ease-in-out;
+	font-size: 1rem;
+	margin: 1rem 0rem;
+}
+
+.cta:hover {
+	background-color: white;
+	color: black;
+}
+
+.cta a {
+	text-decoration: none;
+}

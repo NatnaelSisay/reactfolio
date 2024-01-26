@@ -10,6 +10,7 @@ import INFO from "../data/user";
 import SEO from "../data/seo";
 
 import "./styles/projects.css";
+import ResumeLink from "../components/resume";
 
 const Projects = () => {
 	useEffect(() => {
@@ -54,6 +55,9 @@ const Projects = () => {
 							mind. Collaborating with others is a great way to
 							learn and grow, and I'm always open to new ideas and
 							feedback.
+							<div>
+								<ResumeLink />
+							</div>
 						</div>
 
 						<div className="projects-list">

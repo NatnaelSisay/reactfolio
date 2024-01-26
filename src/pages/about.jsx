@@ -10,6 +10,7 @@ import INFO from "../data/user";
 import SEO from "../data/seo";
 
 import "./styles/about.css";
+import ResumeLink from "../components/resume";
 
 const About = () => {
 	useEffect(() => {
@@ -48,6 +49,7 @@ const About = () => {
 								<div className="subtitle about-subtitle">
 									{INFO.about.description}
 								</div>
+								<ResumeLink />
 							</div>
 
 							<div className="about-left-side">
