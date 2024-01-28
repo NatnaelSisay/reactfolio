@@ -71,7 +71,6 @@ const Homepage = () => {
 		boxShadow: stayLogo ? "0px 4px 10px rgba(0, 0, 0, 0.25)" : "none",
 	};
 
-	console.log(articles);
 	return (
 		<>
 			<Helmet>
@@ -127,7 +126,7 @@ const Homepage = () => {
 											href={social.link}
 											target="_blank"
 											rel="noreferrer"
-											key={index.toString()}
+											key={index}
 										>
 											<DynamicIcon
 												socialMedia={social.name}
@@ -146,14 +145,12 @@ const Homepage = () => {
 							<div className="homepage-articles">
 								{articles.map((article, index) => {
 									return (
-										<>
-											<div
-												className="homepage-article"
-												key={(index + 1).toString()}
-											>
-												<Article article={article} />
-											</div>
-										</>
+										<div
+											className="homepage-article"
+											key={index + 1}
+										>
+											<Article article={article} />
+										</div>
 									);
 								})}
 							</div>

@@ -14,8 +14,12 @@ const Works = () => {
 				<div className="works-body">
 					{INFO.experiences.map((experience, index) => {
 						return (
-							<a href={experience.companyLink} target="_blank">
-								<div className="work" key={index}>
+							<a
+								href={experience.companyLink}
+								target="_blank"
+								key={index}
+							>
+								<div className="work">
 									<div className="work-image">
 										<FontAwesomeIcon icon={faBriefcase} />
 									</div>

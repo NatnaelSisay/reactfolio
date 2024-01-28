@@ -76,10 +76,12 @@ const Contact = () => {
 
 					<div className="socials-container">
 						<div className="contact-socials flex flex-space-between">
-							<div className="border">
+							<div className="">
+								<h3 className="section-title">Social</h3>
 								<Socials />
 							</div>
 							<div className="contact-form">
+								<h3 className="section-title">Contact</h3>
 								<ContactForm />
 							</div>
 						</div>

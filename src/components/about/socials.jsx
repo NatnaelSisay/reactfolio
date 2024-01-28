@@ -19,7 +19,7 @@ const Socials = () => {
 			{INFO.socials.map((social, index) => {
 				return (
 					social.link && (
-						<div className="social">
+						<div className="social" key={index}>
 							<a
 								href={social.link}
 								target="_blank"
