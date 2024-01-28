@@ -14,20 +14,22 @@ const Works = () => {
 				<div className="works-body">
 					{INFO.experiences.map((experience, index) => {
 						return (
-							<div className="work" key={index}>
-								<div className="work-image">
-									<FontAwesomeIcon icon={faBriefcase} />
+							<a href={experience.companyLink} target="_blank">
+								<div className="work" key={index}>
+									<div className="work-image">
+										<FontAwesomeIcon icon={faBriefcase} />
+									</div>
+									<div className="work-title">
+										{experience.company}
+									</div>
+									<div className="work-subtitle">
+										{experience.title}
+									</div>
+									<div className="work-duration">
+										{experience.date}
+									</div>
 								</div>
-								<div className="work-title">
-									{experience.company}
-								</div>
-								<div className="work-subtitle">
-									{experience.title}
-								</div>
-								<div className="work-duration">
-									{experience.date}
-								</div>
-							</div>
+							</a>
 						);
 					})}
 				</div>
