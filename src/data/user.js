@@ -19,7 +19,11 @@ const INFO = {
 			name: "StackOverflow",
 			link: "https://stackoverflow.com/users/8230968/natnael-sisay",
 		},
-		{ icon: "faTwitter", name: "Twitter", link: "https://twitter.com/" },
+		{
+			icon: "faTwitter",
+			name: "Twitter",
+			link: "https://twitter.com/natnael_kagnaw",
+		},
 		{
 			name: "Instagram",
 			link: null,

@@ -17,8 +17,6 @@
 
 .social-text {
 	color: var(--secondary-color);
-	padding-left: 30px;
-	margin-top: -20px;
 	font-weight: 600;
 	font-size: 14px;
 }
@@ -33,4 +31,15 @@
 
 .email-wrapper {
 	padding-top: 20px;
+}
+
+/*  */
+.social-link {
+	width: 100%;
+	padding: 1rem;
+	border-bottom: 1px solid lightgray;
+}
+
+.social-link:hover {
+	background-color: #f4f4f5;
 }
