@@ -4,43 +4,34 @@ import { faBriefcase } from "@fortawesome/free-solid-svg-icons";
 import Card from "../common/card";
 
 import "./styles/works.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import INFO from "../../data/user";
 
 const Works = () => {
 	return (
 		<div className="works">
-			<Card
-				icon={faBriefcase}
-				title="Work"
-				body={
-					<div className="works-body">
-						<div className="work">
-							<img
-								src="./facebook.png"
-								alt="facebook"
-								className="work-image"
-							/>
-							<div className="work-title">Facebook</div>
-							<div className="work-subtitle">
-								Software Engineer
+			<Card icon={faBriefcase} title="Work" body={<></>}>
+				<div className="works-body">
+					{INFO.experiences.map((experience, index) => {
+						return (
+							<div className="work">
+								<div className="work-image">
+									<FontAwesomeIcon icon={faBriefcase} />
+								</div>
+								<div className="work-title">
+									{experience.company}
+								</div>
+								<div className="work-subtitle">
+									{experience.title}
+								</div>
+								<div className="work-duration">
+									{experience.date}
+								</div>
 							</div>
-							<div className="work-duration">2019 - Present</div>
-						</div>
-
-						<div className="work">
-							<img
-								src="./twitter.png"
-								alt="twitter"
-								className="work-image"
-							/>
-							<div className="work-title">Twitter</div>
-							<div className="work-subtitle">
-								Software Engineer
-							</div>
-							<div className="work-duration">2019 - Present</div>
-						</div>
-					</div>
-				}
-			/>
+						);
+					})}
+				</div>
+			</Card>
 		</div>
 	);
 };
