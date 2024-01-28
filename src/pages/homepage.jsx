@@ -19,7 +19,7 @@ import AllProjects from "../components/projects/allProjects";
 
 import INFO from "../data/user";
 import SEO from "../data/seo";
-import myArticles from "../data/articles";
+import myArticles, { articles } from "../data/articles";
 
 import "./styles/homepage.css";
 import ResumeLink from "../components/resume";
@@ -71,6 +71,7 @@ const Homepage = () => {
 		boxShadow: stayLogo ? "0px 4px 10px rgba(0, 0, 0, 0.25)" : "none",
 	};
 
+	console.log(articles);
 	return (
 		<>
 			<Helmet>
@@ -143,20 +144,18 @@ const Homepage = () => {
 
 						<div className="homepage-after-title">
 							<div className="homepage-articles">
-								{myArticles.map((article, index) => (
-									<div
-										className="homepage-article"
-										key={(index + 1).toString()}
-									>
-										<Article
-											key={(index + 1).toString()}
-											date={article().date}
-											title={article().title}
-											description={article().description}
-											link={"/article/" + (index + 1)}
-										/>
-									</div>
-								))}
+								{articles.map((article, index) => {
+									return (
+										<>
+											<div
+												className="homepage-article"
+												key={(index + 1).toString()}
+											>
+												<Article article={article} />
+											</div>
+										</>
+									);
+								})}
 							</div>
 
 							<div className="homepage-works">

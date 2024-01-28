@@ -60,6 +60,37 @@ function article_2() {
 	};
 }
 
+export const articles = [
+	{
+		id: "1",
+		title: "The Benefits of Cloud Computing",
+		date: "7 Jan 2024",
+		description:
+			"Cloud computing offers a range of benefits, including cost savings and increased flexibility. Find out why more businesses are turning to the cloud.",
+		keywords: ["aws", "cloud", "cloud computing"],
+		content: [
+			"### Cloud computing offers a range of benefits, including cost savings and increased flexibility. Find out why more businesses are turning to the cloud.",
+			"## Cloud computing offers a range of benefits, including cost savings and increased flexibility. Find out why more businesses are turning to the cloud.",
+			"# Cloud computing offers a range of benefits, including cost savings and increased flexibility. Find out why more businesses are turning to the cloud.",
+			"- Cloud computing offers a range of benefits, including cost savings and increased flexibility. Find out why more businesses are turning to the cloud.",
+		],
+	},
+	{
+		id: "1",
+		title: "Working with react",
+		date: "7 May 2023",
+		description:
+			"Cloud computing offers a range of benefits, including cost savings and increased flexibility. Find out why more businesses are turning to the cloud.",
+		keywords: ["aws", "cloud", "cloud computing"],
+		content: [
+			"### Cloud computing offers a range of benefits, including cost savings and increased flexibility. Find out why more businesses are turning to the cloud.",
+			"## Cloud computing offers a range of benefits, including cost savings and increased flexibility. Find out why more businesses are turning to the cloud.",
+			"# Cloud computing offers a range of benefits, including cost savings and increased flexibility. Find out why more businesses are turning to the cloud.",
+			"- Cloud computing offers a range of benefits, including cost savings and increased flexibility. Find out why more businesses are turning to the cloud.",
+		],
+	},
+];
+
 const myArticles = [article_1, article_2];
 
 export default myArticles;

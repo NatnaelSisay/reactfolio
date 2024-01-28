@@ -14,7 +14,7 @@ const Works = () => {
 				<div className="works-body">
 					{INFO.experiences.map((experience, index) => {
 						return (
-							<div className="work">
+							<div className="work" key={index}>
 								<div className="work-image">
 									<FontAwesomeIcon icon={faBriefcase} />
 								</div>
