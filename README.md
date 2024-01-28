@@ -3,7 +3,9 @@
 Progress
 
 -   Jan 26 - chose open source project as template
--   Jan 28 - finish home page
+-   Jan 28
+    -   finish home page
+    -   finished contact page
 
 ## 🌱 Credit
 
