@@ -6,6 +6,11 @@ Progress
 -   Jan 28
     -   finish home page
     -   finished contact page
+-   Jan 29
+    -   fundamental reconfiguration
+-   Jan 30
+    -   refactor and organize data code
+    -   add resume link
 
 ## 🌱 Credit
 
