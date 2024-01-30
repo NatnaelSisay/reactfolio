@@ -1,15 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Helmet } from "react-helmet";
 
-import { faMailBulk } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-	faTwitter,
-	faGithub,
-	faStackOverflow,
-	faInstagram,
-} from "@fortawesome/free-brands-svg-icons";
-
+import { ErrorBoundary } from "react-error-boundary";
 import Logo from "../components/common/logo";
 import Footer from "../components/common/footer";
 import NavBar from "../components/common/navBar";
@@ -19,12 +11,11 @@ import AllProjects from "../components/projects/allProjects";
 
 import INFO from "../data/user";
 import SEO from "../data/seo";
-import myArticles, { articles } from "../data/articles";
+import { articles } from "../data/articles";
 
 import "./styles/homepage.css";
 import ResumeLink from "../components/resume";
 import DynamicIcon from "../components/dynamic-icon";
-import { icon } from "@fortawesome/fontawesome-svg-core";
 
 const Homepage = () => {
 	const [stayLogo, setStayLogo] = useState(false);
@@ -142,18 +133,22 @@ const Homepage = () => {
 						</div>
 
 						<div className="homepage-after-title">
-							<div className="homepage-articles">
-								{articles.map((article, index) => {
-									return (
-										<div
-											className="homepage-article"
-											key={index + 1}
-										>
-											<Article article={article} />
-										</div>
-									);
-								})}
-							</div>
+							<ErrorBoundary
+								fallback={<p>error rendering articles</p>}
+							>
+								<div className="homepage-articles">
+									{articles?.map((article, index) => {
+										return (
+											<div
+												className="homepage-article"
+												key={index + 1}
+											>
+												<Article article={article} />
+											</div>
+										);
+									})}
+								</div>
+							</ErrorBoundary>
 
 							<div className="homepage-works">
 								<Works />

@@ -1,18 +1,15 @@
 import React from "react";
-import { Link } from "react-router-dom";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
+import { faUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
 
 import "./styles/article.css";
-import Markdown from "react-markdown";
-const markdown = "# Hi, *Pluto*!";
 
 const Article = (props) => {
-	const { title, description, date, link, article } = props;
+	const { article } = props;
 
 	return (
-		<React.Fragment>
+		<>
 			<div className="homepage-article">
 				<div className="homepage-article-content">
 					<div className="homepage-article-date">
@@ -25,25 +22,19 @@ const Article = (props) => {
 						{article?.description}
 					</div>
 					<div className="homepage-article-link">
-						{article.content.map((content, index) => {
-							return (
-								<div key={index}>
-									{/* {content} */}
-									{/* <Markdown> {markdown}</Markdown> */}
-								</div>
-							);
-						})}
-						<Link to={"/articles/" + article.id}>
-							Read article
-							<FontAwesomeIcon
-								style={{ fontSize: "10px" }}
-								icon={faChevronRight}
-							/>
-						</Link>
+						<a href={article.link} target="_blank" rel="noreferrer">
+							Read article on {article.platform}
+							<span className="pl-1">
+								<FontAwesomeIcon
+									style={{ fontSize: "10px" }}
+									icon={faUpRightFromSquare}
+								/>
+							</span>
+						</a>
 					</div>
 				</div>
 			</div>
-		</React.Fragment>
+		</>
 	);
 };
 

@@ -68,26 +68,18 @@ export const articles = [
 		description:
 			"Cloud computing offers a range of benefits, including cost savings and increased flexibility. Find out why more businesses are turning to the cloud.",
 		keywords: ["aws", "cloud", "cloud computing"],
-		content: [
-			"### Cloud computing offers a range of benefits, including cost savings and increased flexibility. Find out why more businesses are turning to the cloud.",
-			"## Cloud computing offers a range of benefits, including cost savings and increased flexibility. Find out why more businesses are turning to the cloud.",
-			"# Cloud computing offers a range of benefits, including cost savings and increased flexibility. Find out why more businesses are turning to the cloud.",
-			"- Cloud computing offers a range of benefits, including cost savings and increased flexibility. Find out why more businesses are turning to the cloud.",
-		],
+		link: "https://www.google.com",
+		platform: "medium",
 	},
 	{
-		id: "1",
+		id: "2",
 		title: "Working with react",
 		date: "7 May 2023",
 		description:
 			"Cloud computing offers a range of benefits, including cost savings and increased flexibility. Find out why more businesses are turning to the cloud.",
 		keywords: ["aws", "cloud", "cloud computing"],
-		content: [
-			"### Cloud computing offers a range of benefits, including cost savings and increased flexibility. Find out why more businesses are turning to the cloud.",
-			"## Cloud computing offers a range of benefits, including cost savings and increased flexibility. Find out why more businesses are turning to the cloud.",
-			"# Cloud computing offers a range of benefits, including cost savings and increased flexibility. Find out why more businesses are turning to the cloud.",
-			"- Cloud computing offers a range of benefits, including cost savings and increased flexibility. Find out why more businesses are turning to the cloud.",
-		],
+		link: "https://www.google.com",
+		platform: "medium",
 	},
 ];
 
