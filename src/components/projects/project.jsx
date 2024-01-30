@@ -7,7 +7,7 @@ import "./styles/project.css";
 import DynamicIcon from "../dynamic-icon";
 
 const Project = (props) => {
-	const { logo, title, description, linkText, link, technologies } = props;
+	const { title, description, linkText, link, technologies } = props;
 
 	return (
 		<React.Fragment>

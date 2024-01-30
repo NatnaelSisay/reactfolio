@@ -3,7 +3,7 @@ import React from "react";
 import "./styles/card.css";
 
 const Card = (props) => {
-	const { icon, title, body, children } = props;
+	const { title, body, children } = props;
 	return (
 		<div className="card">
 			<div className="card-container">

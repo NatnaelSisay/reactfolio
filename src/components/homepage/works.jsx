@@ -17,6 +17,7 @@ const Works = () => {
 							<a
 								href={experience.companyLink}
 								target="_blank"
+								rel="noreferrer"
 								key={index}
 							>
 								<div className="work">
