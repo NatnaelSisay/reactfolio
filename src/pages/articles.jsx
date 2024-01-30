@@ -8,15 +8,12 @@ import Footer from "../components/common/footer";
 import Logo from "../components/common/logo";
 import Article from "../components/articles/article";
 
-import INFO from "../data/user";
-import SEO from "../data/seo";
+import user from "../data/user";
 import { articles } from "../data/articles";
 
 import "./styles/articles.css";
 
 function fallbackRender({ error, resetErrorBoundary }) {
-	// Call resetErrorBoundary() to reset the error boundary and retry the render.
-
 	return (
 		<div role="alert">
 			<p>Something went wrong:</p>
@@ -30,17 +27,15 @@ const Articles = () => {
 		window.scrollTo(0, 0);
 	}, []);
 
-	const currentSEO = SEO.find((item) => item.page === "articles");
-
 	return (
 		<>
 			<ErrorBoundary fallbackRender={fallbackRender}>
 				<Helmet>
-					<title>{`Articles | ${INFO.main.title}`}</title>
-					<meta name="description" content={currentSEO.description} />
+					<title>{user.main.title}</title>
+					<meta name="description" content={user.SEO.about} />
 					<meta
 						name="keywords"
-						content={currentSEO.keywords.join(", ")}
+						content={user.SEO.keywords.join(", ")}
 					/>
 				</Helmet>
 
@@ -55,16 +50,20 @@ const Articles = () => {
 
 						<div className="articles-main-container">
 							<div className="title articles-title">
-								{INFO.articles.title}
+								I'm passionate about pushing the boundaries of
+								what's possible and inspiring the next
+								generation of innovators.
 							</div>
 
 							<div className="subtitle articles-subtitle">
-								{INFO.articles.description}
+								Chronological collection of my long-form
+								thoughts on programming, leadership, product
+								design, and more.
 							</div>
 
 							<div className="articles-container">
 								<div className="articles-wrapper">
-									{articles.map((article, index) => (
+									{articles.map((article) => (
 										<div
 											className="articles-article"
 											key={article.id}

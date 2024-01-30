@@ -1,9 +1,23 @@
-const INFO = {
+const userInfo = {
 	main: {
 		title: "Natnael Kagnaw",
 		name: "Natnael",
 		email: "natnael.kagnaw01@gmail.com",
 		logo: "../logo.png",
+	},
+	SEO: {
+		keywords: ["Natnael", "Natnael Kagnaw", "Natnael Sisay"],
+		about: `Innovative and Self-directed Full Stack
+		Software Engineer with over 5 years of
+		experience, specializing in Java, Spring
+		Boot, node for Back-end and React, Angular,
+		and other cutting-edge technologies for
+		Frontend web development. Proven track
+		record of achieving performance
+		improvements, implementing efficient
+		solutions for challenging problems, and
+		contributing to the success of projects
+		through dedication and innovation.`,
 	},
 
 	socials: [
@@ -29,36 +43,6 @@ const INFO = {
 			link: null,
 		},
 	],
-
-	homepage: {
-		title: "Full Stack Software Engineer",
-		description: `Innovative and Self-directed Full Stack Software Engineer with over 
-			5 years of experience, specializing in Java, Spring Boot, node for 
-			Back-end and React, Angular, and other cutting-edge technologies for 
-			Frontend web development. Proven track record of achieving performance 
-			improvements, implementing efficient solutions for challenging problems, 
-			and contributing to the success of projects through dedication and 
-			innovation.`,
-	},
-
-	about: {
-		title: "I’m Natnael, The Code Ninja.",
-		description: `I'm an imaginative and self-motivated Full Stack Software 
-		Engineer with over 5 years of experience. I specialize in crafting Back-end 
-		solutions using Java, Spring Boot, and node, and I'm skilled in Frontend 
-		web development with React, Angular, and other modern technologies.
-
-		Over the years, I've consistently delivered better performance, solved 
-		tough problems efficiently, and played a key role in project success 
-		through hard work and creative thinking. My focus is always on finding 
-		innovative solutions and making a positive impact in software development.`,
-	},
-
-	articles: {
-		title: "I'm passionate about pushing the boundaries of what's possible and inspiring the next generation of innovators.",
-		description:
-			"Chronological collection of my long-form thoughts on programming, leadership, product design, and more.",
-	},
 
 	projects: [
 		{
@@ -92,6 +76,29 @@ const INFO = {
 		},
 	],
 
+	articles: [
+		{
+			id: "1",
+			title: "The Benefits of Cloud Computing",
+			date: "7 Jan 2024",
+			description:
+				"Cloud computing offers a range of benefits, including cost savings and increased flexibility. Find out why more businesses are turning to the cloud.",
+			keywords: ["aws", "cloud", "cloud computing"],
+			link: "https://www.google.com",
+			platform: "medium",
+		},
+		{
+			id: "2",
+			title: "Working with react",
+			date: "7 May 2023",
+			description:
+				"Cloud computing offers a range of benefits, including cost savings and increased flexibility. Find out why more businesses are turning to the cloud.",
+			keywords: ["aws", "cloud", "cloud computing"],
+			link: "https://www.google.com",
+			platform: "medium",
+		},
+	],
+
 	experiences: [
 		{
 			title: "Software Engineer",
@@ -122,4 +129,4 @@ const INFO = {
 	],
 };
 
-export default INFO;
+export default userInfo;

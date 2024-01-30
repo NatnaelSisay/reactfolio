@@ -9,9 +9,7 @@ import Article from "../components/homepage/article";
 import Works from "../components/homepage/works";
 import AllProjects from "../components/projects/allProjects";
 
-import INFO from "../data/user";
-import SEO from "../data/seo";
-import { articles } from "../data/articles";
+import user from "../data/user";
 
 import "./styles/homepage.css";
 import ResumeLink from "../components/resume";
@@ -50,8 +48,6 @@ const Homepage = () => {
 		return () => window.removeEventListener("scroll", handleScroll);
 	}, [logoSize, oldLogoSize]);
 
-	const currentSEO = SEO.find((item) => item.page === "home");
-
 	const logoStyle = {
 		display: "flex",
 		position: stayLogo ? "fixed" : "relative",
@@ -65,12 +61,9 @@ const Homepage = () => {
 	return (
 		<>
 			<Helmet>
-				<title>{INFO.main.title}</title>
-				<meta name="description" content={currentSEO.description} />
-				<meta
-					name="keywords"
-					content={currentSEO.keywords.join(", ")}
-				/>
+				<title>{user.main.title}</title>
+				<meta name="description" content={user.SEO.about} />
+				<meta name="keywords" content={user.SEO.keywords.join(", ")} />
 			</Helmet>
 
 			<div className="page-content">
@@ -86,11 +79,21 @@ const Homepage = () => {
 						<div className="homepage-first-area">
 							<div className="homepage-first-area-left-side">
 								<div className="title homepage-title">
-									{INFO.homepage.title}
+									Full Stack Software Engineer
 								</div>
 
 								<div className="subtitle homepage-subtitle">
-									{INFO.homepage.description}
+									Innovative and Self-directed Full Stack
+									Software Engineer with over 5 years of
+									experience, specializing in Java, Spring
+									Boot, node for Back-end and React, Angular,
+									and other cutting-edge technologies for
+									Frontend web development. Proven track
+									record of achieving performance
+									improvements, implementing efficient
+									solutions for challenging problems, and
+									contributing to the success of projects
+									through dedication and innovation.
 								</div>
 							</div>
 
@@ -110,7 +113,7 @@ const Homepage = () => {
 						<ResumeLink />
 
 						<div className="homepage-socials">
-							{INFO.socials.map((social, index) => {
+							{user.socials.map((social, index) => {
 								return (
 									social.link && (
 										<a
@@ -137,7 +140,7 @@ const Homepage = () => {
 								fallback={<p>error rendering articles</p>}
 							>
 								<div className="homepage-articles">
-									{articles?.map((article, index) => {
+									{user.articles?.map((article, index) => {
 										return (
 											<div
 												className="homepage-article"
