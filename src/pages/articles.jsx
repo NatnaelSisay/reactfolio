@@ -9,7 +9,6 @@ import Logo from "../components/common/logo";
 import Article from "../components/articles/article";
 
 import user from "../data/user";
-import { articles } from "../data/articles";
 
 import "./styles/articles.css";
 
@@ -63,7 +62,7 @@ const Articles = () => {
 
 							<div className="articles-container">
 								<div className="articles-wrapper">
-									{articles.map((article) => (
+									{user.articles.map((article) => (
 										<div
 											className="articles-article"
 											key={article.id}

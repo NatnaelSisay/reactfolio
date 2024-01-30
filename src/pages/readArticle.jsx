@@ -7,8 +7,7 @@ import NavBar from "../components/common/navBar";
 import Footer from "../components/common/footer";
 import Logo from "../components/common/logo";
 
-import INFO from "../data/user";
-import myArticles from "../data/articles";
+import user from "../data/user";
 
 import "./styles/readArticle.css";
 
@@ -18,7 +17,7 @@ const ReadArticle = () => {
 	const navigate = useNavigate();
 	let { slug } = useParams();
 
-	const article = myArticles[slug - 1];
+	const article = user.articles[slug - 1];
 
 	useEffect(() => {
 		window.scrollTo(0, 0);
@@ -31,7 +30,7 @@ const ReadArticle = () => {
 	return (
 		<React.Fragment>
 			<Helmet>
-				<title>{`${article().title} | ${INFO.main.title}`}</title>
+				<title>{`${article().title} | ${user.main.title}`}</title>
 				<meta name="description" content={article().description} />
 				<meta name="keywords" content={article().keywords.join(", ")} />
 			</Helmet>

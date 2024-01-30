@@ -4,6 +4,13 @@ const userInfo = {
 		name: "Natnael",
 		email: "natnael.kagnaw01@gmail.com",
 		logo: "../logo.png",
+		resumeLink:
+			"https://docs.google.com/document/d/1QomnFY5EaaZFf1lEcTBozUWlGAlNdeG4Yri_h7MGmoM/edit?usp=sharing",
+	},
+	analytics: {
+		// Google Analytics Tracking ID
+		// https://github.com/truethari/reactfolio#-google-analytics
+		GOOGLE_TRACKING_ID: "",
 	},
 	SEO: {
 		keywords: ["Natnael", "Natnael Kagnaw", "Natnael Sisay"],
