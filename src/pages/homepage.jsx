@@ -1,24 +1,26 @@
 import React, { useState, useEffect } from "react";
 import { Helmet } from "react-helmet";
-
 import { ErrorBoundary } from "react-error-boundary";
+//
 import Logo from "../components/common/logo";
 import Footer from "../components/common/footer";
 import NavBar from "../components/common/navBar";
 import Article from "../components/homepage/article";
 import Works from "../components/homepage/works";
 import AllProjects from "../components/projects/allProjects";
-
-import user from "../data/user";
-
-import "./styles/homepage.css";
 import ResumeLink from "../components/resume";
 import DynamicIcon from "../components/dynamic-icon";
+//
+import "./styles/homepage.css";
+//
+import userInfo from "../data/user";
 
 const Homepage = () => {
 	const [stayLogo, setStayLogo] = useState(false);
 	const [logoSize, setLogoSize] = useState(80);
 	const [oldLogoSize, setOldLogoSize] = useState(80);
+	// eslint-disable-next-line
+	const [user, setUser] = useState(userInfo);
 
 	useEffect(() => {
 		window.scrollTo(0, 0);

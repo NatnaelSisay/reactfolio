@@ -29,7 +29,14 @@ const Footer = () => {
 
 				<div className="footer-credits">
 					<div className="footer-credits-text">
-						© 2023 Tharindu.dev. All Rights Reserved.
+						© 2023 Natnael Kagnaw. All Rights Reserved.
+						<a
+							href="https://github.com/truethari/reactfolio"
+							target="_blank"
+							rel="noreferrer"
+						>
+							credit
+						</a>
 					</div>
 				</div>
 			</div>

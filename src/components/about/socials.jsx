@@ -1,6 +1,6 @@
 import React from "react";
 
-import INFO from "../../data/user";
+import user from "../../data/user";
 
 import "./styles/socials.css";
 import DynamicIcon from "../dynamic-icon";
@@ -8,7 +8,7 @@ import DynamicIcon from "../dynamic-icon";
 const Socials = () => {
 	return (
 		<div className="socials">
-			{INFO.socials.map((social, index) => {
+			{user.socials.map((social, index) => {
 				return (
 					social.link && (
 						<div className="social" key={index}>
