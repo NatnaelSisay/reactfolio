@@ -67,10 +67,7 @@
 
 .flex-space-between {
 	justify-content: space-between;
-}
-
-.contact-form {
-	padding: 2rem;
+	align-items: flex-start;
 }
 
 .mt-1 {

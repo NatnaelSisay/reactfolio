@@ -1,15 +1,15 @@
 import React, { useEffect } from "react";
 import { Helmet } from "react-helmet";
-
+//
 import NavBar from "../components/common/navBar";
 import Footer from "../components/common/footer";
 import Logo from "../components/common/logo";
 import Socials from "../components/about/socials";
-
-import user from "../data/user";
-
-import "./styles/contact.css";
 import ContactForm from "../components/ContactForm";
+//
+import "./styles/contact.css";
+//
+import user from "../data/user";
 
 const Contact = () => {
 	useEffect(() => {
@@ -62,11 +62,12 @@ const Contact = () => {
 
 					<div className="socials-container">
 						<div className="contact-socials flex flex-space-between">
-							<div className="">
+							<div>
 								<h3 className="section-title">Social</h3>
 								<Socials />
 							</div>
-							<div className="contact-form">
+
+							<div>
 								<h3 className="section-title">Contact</h3>
 								<ContactForm />
 							</div>
