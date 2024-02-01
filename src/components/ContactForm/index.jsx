@@ -122,7 +122,7 @@ export default function ContactForm() {
 			)}
 			{submitted && successFull && (
 				<div className="alert alert-success" role="alert">
-					Thank you for contacting me. I will get back to you as soon
+					Thank you, Message Sent.
 				</div>
 			)}
 			{submitted && error && (

@@ -86,22 +86,12 @@ const userInfo = {
 	articles: [
 		{
 			id: "1",
-			title: "The Benefits of Cloud Computing",
-			date: "7 Jan 2024",
+			title: "How to get started with react",
+			date: "31 Jan 2024",
 			description:
-				"Cloud computing offers a range of benefits, including cost savings and increased flexibility. Find out why more businesses are turning to the cloud.",
-			keywords: ["aws", "cloud", "cloud computing"],
-			link: "https://www.google.com",
-			platform: "medium",
-		},
-		{
-			id: "2",
-			title: "Working with react",
-			date: "7 May 2023",
-			description:
-				"Cloud computing offers a range of benefits, including cost savings and increased flexibility. Find out why more businesses are turning to the cloud.",
-			keywords: ["aws", "cloud", "cloud computing"],
-			link: "https://www.google.com",
+				"Embarking on the journey with React introduces unparalleled front-end development efficiency and empowers developers to build dynamic user interfaces seamlessly, discover the reasons behind the rising popularity of React in the tech community.",
+			keywords: ["react", "react.js", "front-end"],
+			link: "https://natnael-sisay.medium.com/how-to-get-started-with-react-0a1bed2b6585",
 			platform: "medium",
 		},
 	],
