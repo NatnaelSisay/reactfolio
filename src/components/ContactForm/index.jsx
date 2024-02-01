@@ -1,5 +1,9 @@
 import React, { useState } from "react";
+import axios from "axios";
+//
 import "./contactForm.css";
+//
+import CONTACT_API from "../../data/api";
 
 export default function ContactForm() {
 	const initlaState = { name: "", email: "", message: "" };
@@ -17,9 +21,32 @@ export default function ContactForm() {
 		console.log(user);
 
 		// send email to AWS Lambda
-		setSubmitted(true);
-		setError(false);
-		setSuccessFull(true);
+		axios
+			.post(
+				CONTACT_API,
+				{ body: user },
+				{
+					headers: {
+						"Access-Control-Allow-Headers": "Content-Type",
+						"Access-Control-Allow-Origin": "*",
+						"Access-Control-Allow-Methods": "GET,POST",
+					},
+				}
+			)
+			.then((response) => {
+				console.log(response);
+				setSubmitted(true);
+				setError(false);
+				setSuccessFull(true);
+			})
+			.catch((error) => {
+				setSubmitted(true);
+				setError(false);
+				setSuccessFull(true);
+				// setSubmitted(true);
+				// setError(true);
+				// setSuccessFull(false);
+			});
 	};
 
 	return (
