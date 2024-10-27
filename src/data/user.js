@@ -5,7 +5,7 @@ const userInfo = {
 		email: "natnael.kagnaw01@gmail.com",
 		logo: "../logo.png",
 		resumeLink:
-			"https://docs.google.com/document/d/1QomnFY5EaaZFf1lEcTBozUWlGAlNdeG4Yri_h7MGmoM/edit?usp=sharing",
+			"https://docs.google.com/document/d/1eIyAc4kxRFBJgm0YLr6lQ5v9pgIyEWxyu9iKKzOiQms/edit?usp=sharing", // Natnael_Kagnaw_Resume_01_S
 	},
 	analytics: {
 		// Google Analytics Tracking ID
@@ -115,10 +115,10 @@ const userInfo = {
 			company: "Adludio",
 			companyLink: "https://www.adludio.com/",
 			companyShortDetail: "Xillow is a property management system",
-			date: "2021 - 2022",
+			date: "2021 - 2023",
 			desc: "Collaborated to create a property management system. Features include authentication/authorization, Role-based views, search listings, bid on properties and more",
 			descBullets: [
-				"Designed and developed the front-end using React, Redux, and Material UI",
+				"Increased request processing capacity by implementing multithreading and parallel processing in Thread pool",
 				"Implemented the back-end using Spring Boot, Spring Security, and MySQL",
 				"Utilized Git for version control and Jira for project management",
 			],
