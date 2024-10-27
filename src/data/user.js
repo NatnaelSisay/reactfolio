@@ -99,6 +99,19 @@ const userInfo = {
 	experiences: [
 		{
 			title: "Software Engineer",
+			company: "DataLeeq",
+			companyLink: "https://www.dataleeq.com/",
+			companyShortDetail: "Data consulstancy and Automation",
+			date: "2023 - Present",
+			desc: "Design Interactive web applications used by clients and monitory the deployment of microservices and products in AWS",
+			descBullets: [
+				"Successfully implemented CI/CD pipelines using Jenkins and Docker, migrating monolithic applications to microservices architecture with Spring Boot, Kubernetes, and AWS EKS.",
+				"Collaborated in leading SDLC for Java/Spring Boot applications, focusing on RESTful API and microservices architecture.",
+				"Mentored and fostered collaboration within the development team, emphasizing code reviews and unit tests.",
+			],
+		},
+		{
+			title: "Software Engineer",
 			company: "Adludio",
 			companyLink: "https://www.adludio.com/",
 			companyShortDetail: "Xillow is a property management system",
