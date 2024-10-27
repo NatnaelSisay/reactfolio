@@ -128,7 +128,7 @@ const userInfo = {
 			company: "Zowi Tech",
 			companyLink: "https://zowitech.com/",
 			companyShortDetail: "Xillow is a property management system",
-			date: "2017 - 2021",
+			date: "2019 - 2021",
 			desc: "Collaborated to create a property management system. Features include authentication/authorization, Role-based views, search listings, bid on properties and more",
 			descBullets: [
 				"Designed and developed the front-end using React, Redux, and Material UI",
