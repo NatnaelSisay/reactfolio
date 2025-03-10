@@ -5,7 +5,7 @@ const userInfo = {
 		email: "natnael.kagnaw01@gmail.com",
 		logo: "../logo.png",
 		resumeLink:
-			"https://docs.google.com/document/d/1eIyAc4kxRFBJgm0YLr6lQ5v9pgIyEWxyu9iKKzOiQms/edit?usp=sharing", // Natnael_Kagnaw_Resume_01_S
+			"https://drive.google.com/drive/folders/1LePT_LUQI1Lxw1fpZqiyIXqJdZ9EV8w8?usp=sharing", // Natnael_Kagnaw_Resume_01_S
 	},
 	analytics: {
 		// Google Analytics Tracking ID
