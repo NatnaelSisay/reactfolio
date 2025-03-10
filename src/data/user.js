@@ -99,15 +99,19 @@ const userInfo = {
 	experiences: [
 		{
 			title: "Software Engineer",
-			company: "DataLeeq",
-			companyLink: "https://www.dataleeq.com/",
+			company: "DataAnnotation",
+			companyLink: "https://www.dataannotation.tech",
 			companyShortDetail: "Data consulstancy and Automation",
-			date: "2023 - Present",
+			date: "2024 - Present",
 			desc: "Design Interactive web applications used by clients and monitory the deployment of microservices and products in AWS",
 			descBullets: [
-				"Successfully implemented CI/CD pipelines using Jenkins and Docker, migrating monolithic applications to microservices architecture with Spring Boot, Kubernetes, and AWS EKS.",
-				"Collaborated in leading SDLC for Java/Spring Boot applications, focusing on RESTful API and microservices architecture.",
-				"Mentored and fostered collaboration within the development team, emphasizing code reviews and unit tests.",
+				`Led the adoption of a modular React component library integrated with Next.js and Spring Boot APIs, 
+					reducing development time for new features by 50% and standardizing code practices acrossmultiple teams.`,
+				`Spearheaded the optimization of a React/Next.js frontend and Spring Boot backend, reducing
+					page load times by 40% and improving overall system throughput by 30% through strategic
+					caching, lazy loading, and efficient API design.`,
+				`Maintained high code quality standards, achieving approximately 90% code coverage through
+					detailed unit and integration tests, executed under stringent deadlines.`,
 			],
 		},
 		{
